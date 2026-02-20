@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSÉLYA | Parfums d'Élégance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-left">
+        <a href="index.html">Accueil</a>
+        <a href="huiles.html">Nos Huiles Parfumées</a>
+        <a href="packs.html">Nos Packs</a>
+        <a href="essence.html">Votre Essence</a>
+    </nav>
+    <div class="logo">ROSÉLYA</div>
+    <div class="nav-right">
+        <span class="free-shipping">Livraison gratuite</span>
+        <a href="huiles.html"><i class="fas fa-search"></i></a>
+        <a href="panier.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="Firefly Cinematic close-up of the elegant woman in the photo gently applying a drop of golden perfum.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1>Révélez Votre Essence Royale</h1>
+        <p>Huiles parfumées concentrées 50ml – Longue tenue – Élégance – Féminité</p>
+        <a href="huiles.html" class="btn">Découvrir nos huiles</a>
+    </div>
+</section>
+
+<h2 class="section-title">Nos Bestsellers</h2>
+<div class="product-grid">
+    <div class="product-card">
+        <img src="IMG_7075.png" alt="Musk Blanc">
+        <h3>Musk Blanc</h3>
+        <p>Pureté et douceur infinie. Un classique intemporel.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Musk Blanc', 120, 'IMG_7075.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7076.png" alt="Noix de Coco">
+        <h3>Noix de Coco</h3>
+        <p>Un voyage tropical sucré et envoûtant.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Noix de Coco', 120, 'IMG_7076.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7074.png" alt="Ambre Gold">
+        <h3>Ambre Gold</h3>
+        <p>Chaud, luxueux et mystérieusement floral.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Ambre Gold', 120, 'IMG_7074.png')">Ajouter au panier</button>
+    </div>
+</div>
+
+<section class="about-section" id="about">
+    <h2 class="section-title">À Propos de ROSÉLYA</h2>
+    <p>"Chez ROSÉLYA, nous croyons que chaque femme mérite élégance, douceur et raffinement. Nos huiles parfumées concentrées sont conçues pour révéler votre féminité et laisser une signature olfactive unique. Laissez votre parfum parler pour vous."</p>
+</section>
+
+<h2 class="section-title">Ce que disent nos clientes</h2>
+<div class="reviews">
+    <div class="review-card">
+        <p>"Le Musk Blanc tient toute la journée ! L'odeur est tellement douce et luxueuse. Je recommande à 100%."</p>
+        <strong>- Sofia, Casablanca</strong>
+    </div>
+    <div class="review-card">
+        <p>"Commande reçue très rapidement avec la livraison gratuite. L'huile de Vanille est une merveille."</p>
+        <strong>- Inès, Rabat</strong>
+    </div>
+    <div class="review-card">
+        <p>"J'ai pris le pack Signature Royale. Le packaging est magnifique et les senteurs sont incroyables."</p>
+        <strong>- Kenza, Marrakech</strong>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
