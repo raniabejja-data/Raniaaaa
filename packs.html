@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nos Packs | ROSÉLYA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-left">
+        <a href="index.html">Accueil</a>
+        <a href="huiles.html">Nos Huiles Parfumées</a>
+        <a href="packs.html">Nos Packs</a>
+        <a href="essence.html">Votre Essence</a>
+    </nav>
+    <div class="logo">ROSÉLYA</div>
+    <div class="nav-right">
+        <span class="free-shipping">Livraison gratuite</span>
+        <a href="panier.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<h2 class="section-title">Nos Packs Exclusifs</h2>
+
+<div class="product-grid">
+    <div class="product-card">
+        <img src="IMG_7090.png" alt="Signature Royale">
+        <h3>Pack Signature Royale</h3>
+        <p>L'assortiment ultime pour une allure majestueuse.</p>
+        <span class="price">350 DH</span>
+        <button class="btn" onclick="addToCart('Pack Signature Royale', 350, 'IMG_7090.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7091.png" alt="Douceur Gourmande">
+        <h3>Pack Douceur Gourmande</h3>
+        <p>Le coffret parfait pour les amoureuses de notes sucrées.</p>
+        <span class="price">350 DH</span>
+        <button class="btn" onclick="addToCart('Pack Douceur Gourmande', 350, 'IMG_7091.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7094.png" alt="L’Escale Exotique">
+        <h3>Pack L’Escale Exotique</h3>
+        <p>Voyagez à travers des senteurs florales et tropicales.</p>
+        <span class="price">350 DH</span>
+        <button class="btn" onclick="addToCart('Pack L’Escale Exotique', 350, 'IMG_7094.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7094.png" alt="Bien-être">
+        <h3>Pack Bien-être</h3>
+        <p>Une sélection apaisante pour se ressourcer en douceur.</p>
+        <span class="price">350 DH</span>
+        <button class="btn" onclick="addToCart('Pack Bien-être', 350, 'IMG_7094.png')">Ajouter au panier</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
