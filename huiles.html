@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nos Huiles | ROSÉLYA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-left">
+        <a href="index.html">Accueil</a>
+        <a href="huiles.html">Nos Huiles Parfumées</a>
+        <a href="packs.html">Nos Packs</a>
+        <a href="essence.html">Votre Essence</a>
+    </nav>
+    <div class="logo">ROSÉLYA</div>
+    <div class="nav-right">
+        <span class="free-shipping">Livraison gratuite</span>
+        <a href="panier.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<h2 class="section-title">Nos Huiles Parfumées Concentrées (50ml)</h2>
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Rechercher une huile par nom..." onkeyup="searchOils()">
+</div>
+
+<div class="product-grid" id="oils-grid">
+    <div class="product-card">
+        <img src="IMG_7073.png" alt="Fruits rouges">
+        <h3>Fruits rouges</h3>
+        <p>Une explosion fruitée, pétillante et gourmande.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Fruits rouges', 120, 'IMG_7073.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7074.png" alt="Ambre Gold">
+        <h3>Ambre Gold</h3>
+        <p>Des notes dorées, luxueuses et chaleureuses.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Ambre Gold', 120, 'IMG_7074.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7075.png" alt="Musk Blanc">
+        <h3>Musk Blanc</h3>
+        <p>Douceur de coton, élégance discrète mais présente.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Musk Blanc', 120, 'IMG_7075.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7076.png" alt="Noix de Coco">
+        <h3>Noix de Coco</h3>
+        <p>Senteur tropicale, onctueuse et réconfortante.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Noix de Coco', 120, 'IMG_7076.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7077.png" alt="Miel">
+        <h3>Miel</h3>
+        <p>Nectar sucré, envoûtant et profondément féminin.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Miel', 120, 'IMG_7077.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7078.png" alt="Vanille">
+        <h3>Vanille</h3>
+        <p>Intense, gourmande et indéniablement séduisante.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Vanille', 120, 'IMG_7078.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7079.png" alt="Caramel">
+        <h3>Caramel</h3>
+        <p>Touche fondante et addictive pour la peau.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Caramel', 120, 'IMG_7079.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7081.png" alt="Chocolat">
+        <h3>Chocolat</h3>
+        <p>Arôme riche, délicieusement tentant.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Chocolat', 120, 'IMG_7081.png')">Ajouter au panier</button>
+    </div>
+    <div class="product-card">
+        <img src="IMG_7083.png" alt="Exotic Garden">
+        <h3>Exotic Garden</h3>
+        <p>Un bouquet floral venu d'ailleurs, frais et unique.</p>
+        <span class="price">120 DH</span>
+        <button class="btn" onclick="addToCart('Exotic Garden', 120, 'IMG_7083.png')">Ajouter au panier</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
