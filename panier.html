@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Panier | ROSÉLYA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-left">
+        <a href="index.html">Accueil</a>
+        <a href="huiles.html">Nos Huiles Parfumées</a>
+        <a href="packs.html">Nos Packs</a>
+        <a href="essence.html">Votre Essence</a>
+    </nav>
+    <div class="logo">ROSÉLYA</div>
+    <div class="nav-right">
+        <span class="free-shipping">Livraison gratuite</span>
+        <a href="panier.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<div class="cart-container">
+    <h2 class="section-title" style="margin-top: 0;">Votre Panier</h2>
+    
+    <div id="cart-items">
+        </div>
+    
+    <div style="text-align: right; font-size: 20px; font-weight: bold; margin-top: 20px;">
+        Total : <span id="cart-total">0 DH</span>
+    </div>
+
+    <h3 style="margin-top: 40px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">Informations de Livraison <span style="font-size:14px; color:var(--gold); font-weight:normal;">(Livraison Gratuite)</span></h3>
+    
+    <form class="checkout-form" onsubmit="checkout(event)">
+        <input type="text" placeholder="Nom" required>
+        <input type="text" placeholder="Prénom" required>
+        <input type="text" placeholder="Ville" required>
+        <input type="text" placeholder="Adresse complète" required>
+        <input type="tel" placeholder="Numéro de téléphone" required>
+        <button type="submit" class="btn" style="margin-top: 15px;">Valider la commande</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
