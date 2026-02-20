@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Votre Essence | ROSÉLYA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-left">
+        <a href="index.html">Accueil</a>
+        <a href="huiles.html">Nos Huiles Parfumées</a>
+        <a href="packs.html">Nos Packs</a>
+        <a href="essence.html">Votre Essence</a>
+    </nav>
+    <div class="logo">ROSÉLYA</div>
+    <div class="nav-right">
+        <span class="free-shipping">Livraison gratuite</span>
+        <a href="panier.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a>
+    </div>
+</header>
+
+<h2 class="section-title">Créez Votre Signature Olfactive</h2>
+<p style="text-align:center; margin-bottom: 40px;">Mélangez 1 ou 2 senteurs pour créer une huile personnalisée (120 DH).</p>
+
+<div class="cart-container" style="text-align: center; background: var(--pale-pink); padding: 40px; border-radius: 10px;">
+    
+    <label for="note1">Senteur Principale :</label><br>
+    <select id="note1" style="padding: 10px; width: 80%; max-width: 300px; margin: 10px 0 20px;">
+        <option value="">-- Choisissez une huile --</option>
+        <option value="Musk Blanc">Musk Blanc</option>
+        <option value="Noix de Coco">Noix de Coco</option>
+        <option value="Vanille">Vanille</option>
+        <option value="Caramel">Caramel</option>
+        <option value="Ambre Gold">Ambre Gold</option>
+        <option value="Fruits rouges">Fruits rouges</option>
+        <option value="Exotic Garden">Exotic Garden</option>
+        <option value="Chocolat">Chocolat</option>
+        <option value="Miel">Miel</option>
+    </select>
+    <br>
+
+    <label for="note2">Senteur Secondaire (Optionnel) :</label><br>
+    <select id="note2" style="padding: 10px; width: 80%; max-width: 300px; margin: 10px 0 30px;">
+        <option value="">-- Aucune (Pure) --</option>
+        <option value="Musk Blanc">Musk Blanc</option>
+        <option value="Noix de Coco">Noix de Coco</option>
+        <option value="Vanille">Vanille</option>
+        <option value="Caramel">Caramel</option>
+        <option value="Ambre Gold">Ambre Gold</option>
+        <option value="Fruits rouges">Fruits rouges</option>
+        <option value="Exotic Garden">Exotic Garden</option>
+        <option value="Chocolat">Chocolat</option>
+        <option value="Miel">Miel</option>
+    </select>
+    <br>
+
+    <p style="font-weight: bold; margin-bottom: 20px;">Votre parfum personnalisé est prêt.</p>
+    <button class="btn" onclick="createEssence()">Ajouter au panier (120 DH)</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
